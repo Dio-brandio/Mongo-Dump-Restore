@@ -1,3 +1,16 @@
-# robots.txt example allowing all
+# Block all web crawlers from accessing the entire site
 User-agent: *
+Disallow: /
+
+# Allow Googlebot to crawl everything
+User-agent: Googlebot
 Disallow:
+
+# Disallow all web crawlers from accessing the /admin/ directory
+User-agent: *
+Disallow: /admin/
+
+# Allow all web crawlers to access everything under /public/
+User-agent: *
+Allow: /public/
+Disallow: /  # Ensure that the /public/ directory is explicitly allowed
