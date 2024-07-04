@@ -1,0 +1,3 @@
+# robots.txt example allowing all
+User-agent: *
+Disallow:
